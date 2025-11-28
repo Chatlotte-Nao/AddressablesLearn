@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
+using UnityEngine.ResourceManagement.ResourceLocations;
 
 public class Lesson3 : MonoBehaviour
 {
@@ -14,18 +15,23 @@ public class Lesson3 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Addressables.LoadAssetAsync<GameObject>("SD").Completed += (handle) =>
+        // Addressables.LoadAssetAsync<GameObject>("SD").Completed += (handle) =>
+        // {
+        //     if (handle.Status == AsyncOperationStatus.Succeeded)
+        //     {
+        //         Instantiate(handle.Result);
+        //     }
+        // };
+        List<string> strs = new List<string>{"Sprite1","Sprite2" };
+        Addressables.LoadAssetsAsync<Object>(strs, (objs) =>
         {
-            if (handle.Status == AsyncOperationStatus.Succeeded)
-            {
-                Instantiate(handle.Result);
-            }
-        };
+            print(objs.name);
+        },Addressables.MergeMode.Intersection);
     }
 
     // Update is called once per frame
     void Update()
-    {
+    { 
         
     }
     

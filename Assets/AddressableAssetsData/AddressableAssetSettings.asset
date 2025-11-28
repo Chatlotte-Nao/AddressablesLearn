@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: 41cc82dfb44bc3348aaa4a32426a9f19
   m_currentHash:
     serializedVersion: 2
-    Hash: 00000000000000000000000000000000
+    Hash: 59afe01b5f442e2f049788568c5bb076
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_BundleLocalCatalog: 0
@@ -77,6 +77,20 @@ MonoBehaviour:
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
       - m_Id: c86037a3103ec0c41aa00065bc844845
         m_Value: http://[PrivateIpAddress]:[HostingServicePort]
+    - m_InheritedParent: 
+      m_Id: 580d74272d57d2844a0224e860779903
+      m_ProfileName: New Profile
+      m_Values:
+      - m_Id: 079c3ab4e9536a749874d93b79ceabf7
+        m_Value: ServerData/[BuildTarget]
+      - m_Id: a8ba8830548753449b81b1eb2ad1cee8
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: b1e93fdb512e3d2498f40fb7e4c0a34a
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: bc8e7af36893f5146ad0458a53859320
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: c86037a3103ec0c41aa00065bc844845
+        m_Value: http://[PrivateIpAddress]:[HostingServicePort]
     m_ProfileEntryNames:
     - m_Id: 079c3ab4e9536a749874d93b79ceabf7
       m_Name: Remote.BuildPath
@@ -98,6 +112,8 @@ MonoBehaviour:
     m_LabelNames:
     - SD
     - HD
+    - Sprite1
+    - Sprite2
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 58eafd33811d99246b02b231f72666f5, type: 2}

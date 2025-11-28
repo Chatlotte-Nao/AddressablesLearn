@@ -20,12 +20,16 @@ MonoBehaviour:
   - m_GUID: 5341729d7d78b6447b8faf19b48809ce
     m_Address: quanlity_1
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - Sprite1
+    - Sprite2
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: edd19526ae004b840bb5bf9e812dee01
     m_Address: quanlity_0
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - Sprite1
+    - Sprite2
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e43e4993f8f06ed4dae122f1e6502980, type: 2}
